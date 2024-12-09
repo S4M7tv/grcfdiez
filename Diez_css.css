@@ -1,0 +1,191 @@
+/* Général */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    background: linear-gradient(to bottom, #333, #444);
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background: #111;
+    color: #f39c12; /* Or chaud */
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #f39c12;
+}
+
+/* Contenu principal */
+main {
+    padding: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Article (contenu de la fiche) */
+article {
+    padding: 25px;
+    background: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+article section {
+    margin-bottom: 30px;
+}
+
+article h2 {
+    font-size: 2em;
+    color: #f39c12;
+    border-left: 5px solid #f39c12;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+}
+
+article ul li {
+    background: #444;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article ul li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+article p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+    color: #dcdcdc;
+}
+
+/* Boutons interactifs */
+a.button {
+    display: inline-block;
+    background: #f39c12;
+    color: #111;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+a.button:hover {
+    background: #e67e22;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    background: #111;
+    color: #f39c12;
+    padding: 18px 10px;
+    margin-top: 25px;
+    border-top: 3px solid #f39c12;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Interactivité */
+article ul li::before {
+    content: '★';
+    color: #f39c12;
+    margin-right: 10px;
+}
+
+article section:hover {
+    background: #444;
+    transition: background 0.3s ease-in-out;
+}
+
+header:hover {
+    background: linear-gradient(45deg, #333, #444);
+    transition: background 0.4s ease-in-out;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.4em;
+    }
+
+    article h2 {
+        font-size: 1.7em;
+    }
+
+    a.button {
+        font-size: 1em;
+        padding: 10px 18px;
+    }
+}
+
+/* Optimisation pour mobile */
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, #333, #444);
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    article h2 {
+        font-size: 1.6em;
+    }
+
+    a.button {
+        font-size: 1em;
+        padding: 10px 16px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    article ul li {
+        padding: 12px 14px;
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
